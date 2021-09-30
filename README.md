@@ -19,6 +19,20 @@ Run `run.m` in MATLAB to generate the resulting TSV file of the simulation.
 
 You can also call `run_shared_gas_burner` from MATLAB.
 
+Model
+------
+
+This Simulink model encodes the following hybrid automaton. 
+
+<img src="./model.png" style="width: 50%" />
+
+The ODEs for each burner's stateus is as follows, where h = 2, a = 0.01, b = 0.005.
+
+- burner_1 = 1: <img src="https://render.githubusercontent.com/render/math?math={\dot{x_1}=h-ax_1%2bbx_2}" />
+- burner_2 = 1: <img src="https://render.githubusercontent.com/render/math?math={\dot{x_2}=h - ax_2 %2b bx_1}" />
+- burner_1 = 0: <img src="https://render.githubusercontent.com/render/math?math={\dot{x_1}=-ax_1 %2b bx_2}" />
+- burner_2 = 0: <img src="https://render.githubusercontent.com/render/math?math={\dot{x_2}=-ax_2 %2b bx_1}" />
+
 Reference
 ---------
 
