@@ -1,0 +1,7 @@
+# Resulting file
+result.tsv
+# MATLAB realted files
+slprj
+*.slxc
+*.slx.r*
+*.asv
